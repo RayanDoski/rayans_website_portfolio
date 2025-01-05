@@ -1,0 +1,217 @@
+.skills {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skills::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+               radial-gradient(circle at 100% 100%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 4rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .skills-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #6366f1);
+    border-radius: 2px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+    perspective: 1000px;
+  }
+  
+  .skill-category {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .skill-category:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.3);
+  }
+  
+  .category-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .category-title::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #2563eb;
+    border-radius: 50%;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .skill-item {
+    width: 100%;
+  }
+  
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .skill-name {
+    font-weight: 600;
+    color: #1f2937;
+    position: relative;
+    padding-left: 1rem;
+  }
+  
+  .skill-name::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+  }
+  
+  .skill-percentage {
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #2563eb, #6366f1);
+    border-radius: 999px;
+    position: relative;
+    transform-origin: left;
+    animation: slideIn 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  .skill-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
+  @keyframes shimmer {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .skills-title {
+      font-size: 3.25rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .skill-category {
+      padding: 3rem;
+    }
+  }
+  
+  /* Add hover effect for skill bars */
+  .skill-item:hover .skill-progress::after {
+    animation: shimmer 1s infinite;
+  }
+  
+  /* Add subtle animation for percentage numbers */
+  .skill-percentage {
+    transition: color 0.3s ease;
+  }
+  
+  .skill-item:hover .skill-percentage {
+    color: #2563eb;
+  }
+  
+  /* Add smooth transition for skill names */
+  .skill-name {
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover .skill-name {
+    transform: translateX(5px);
+  }
