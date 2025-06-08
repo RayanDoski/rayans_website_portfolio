@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f5f5;
+  --foreground: #333;
+}
+
+@theme inline {
+  --color-primary-bg: #f5f5f5;
+  --color-primary-text: #333;
+  --color-accent-blue: #87CEEB;
+  /* SkyBlue */
+  --color-darker-blue: #6495ED;
+  /* CornflowerBlue */
+  --color-subtle-gray: #E8E8E8;
+  /* Light gray */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-primary-bg: #f5f5f5;
+  --color-primary-text: #333;
+  --color-accent-blue: #87CEEB;
+  /* SkyBlue */
+  --color-darker-blue: #6495ED;
+  /* CornflowerBlue */
+  --color-subtle-gray: #E8E8E8;
+  /* Light gray */
+}
+
+/* Keyframes for the pulse-once animation for the logo */
+@keyframes pulse-once {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  /* Slightly larger */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the pulse-once animation */
+.animate-pulse-once {
+  animation: pulse-once 0.8s ease-out 1;
+  /* Runs once on load */
+}
+
+/* Custom font definition (assuming 'Inter' is available or loaded globally) */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom soft shadow for the header */
+.header-soft-shadow {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* hero */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  /* Start at original position */
+  50% {
+    transform: translateY(-15px);
+  }
+
+  /* Move up 15px */
+  100% {
+    transform: translateY(0px);
+  }
+
+  /* Return to original position */
+}
+
+/* Apply the floating animation */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+  /* 3 seconds duration, ease-in-out timing, infinite loop */
+}
+
+/* Custom font definition (assuming 'Inter' is available or loaded globally) */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom soft shadow for the hero image */
+.hero-image-shadow {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Custom soft shadow for the divider line */
+.divider-soft-shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* Custom soft shadow for the heading underline */
+.about-heading-underline-shadow {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom font definition (assuming 'Inter' is available or loaded globally) */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Keyframes for the slide-up animation (for text and cards entering). */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the fade-in animation (for overall section visibility). */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Class to apply the slide-up animation. */
+.animate-slideUp {
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+  /* Base delay for elements using this animation */
+}
+
+/* Custom soft shadow for the heading underline, reused from About section. */
+.about-heading-underline-shadow {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom soft shadow for project cards, giving them a subtle lifted effect. */
+.project-card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Custom font definition (assuming 'Inter' is available or loaded globally). */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Keyframes for the slide-up animation. */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the fade-in animation. */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Class to apply the slide-up animation. */
+.animate-slideUp {
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+  /* Base delay for elements using this animation */
+}
+
+/* Custom soft shadow for the heading underline, reused from About and Projects sections. */
+.about-heading-underline-shadow {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom soft shadow for the contact form card. */
+.contact-form-shadow {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom soft shadow for the contact info card. */
+.contact-info-shadow {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom font definition (assuming 'Inter' is available or loaded globally). */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
