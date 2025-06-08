@@ -6,7 +6,7 @@ function Projects({ isVisible }) {
         {
             id: 1,
             name: "Scandifit",
-            description: "A webbapplcation that generates a personalized workout plan, diet plan and sleep scheudal based on user preferences and fitness goals.",
+            description: "Develop personalized workout, diet, and sleep regimens with this web application, optimizing plans based on user preferences and fitness aspirations.",
             language: ["React", "Python", "Html", "CSS", "JavaScript", "MySQL", "Flask"],
             github: "https://github.com/RayanDoski/scandifit",
             live: null,
@@ -14,7 +14,7 @@ function Projects({ isVisible }) {
         {
             id: 2,
             name: "DoskiFlix",
-            description: "A personolized movie recommendation system that suggests movies based on user preferences and viewing history.",
+            description: "An intelligent movie recommendation platform delivering personalized suggestions drawn from individual user preferences and viewing history.",
             language: ["React", "Python", "Html", "CSS", "MySQL", "Flask"],
             github: "https://github.com/RayanDoski/DoskiFlix",
             live: null,
@@ -22,14 +22,14 @@ function Projects({ isVisible }) {
         {
             id: 3,
             name: "CryptoCoin",
-            description: "A webb application that provides real-time cryptocurrency prices, market data, and lets yours invest in various cryptocurrencies with fiat money.",
+            description: "An intuitive web application for accessing live cryptocurrency prices and market analytics, facilitating direct investments in digital assets using fiat currency.",
             language: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
             github: "https://github.com/RayanDoski/cryptocoin",
             live: null,
         },
         {
             id: 4,
-            name: "rayans_website_portfoliorayans_website_portfolio",
+            name: "Rayan's Portfolio",
             description: "A personal portfolio website showcasing my projects, skills, and experience.",
             language: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
             github: "https://github.com/RayanDoski/rayans_website_portfolio",
@@ -67,7 +67,7 @@ function Projects({ isVisible }) {
                                 <h3 className="text-xl font-semibold mb-2 text-[var(--color-accent-blue)]">{repo.name}</h3>
                                 <p className="text-[var(--color-primary-text)] opacity-90 mb-4">{repo.description}</p>
 
-                                <div className="flex gap-4 items-center text-sm mb-4">
+                                <div className="mb-4 flex flex-wrap gap-2">
                                     {repo.language.map(language => (
                                         <span className="text-[var(--color-primary-text)] opacity-70 font-medium">
                                             {language}

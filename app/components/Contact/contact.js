@@ -34,11 +34,11 @@ function Contact({ isVisible }) {
 
                         <h3 className="text-2xl font-bold mt-10 mb-4 text-[var(--color-primary-text)]">Connect With Me</h3>
                         <div className="flex gap-5">
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                            <a href="https://www.linkedin.com/in/reyan-doski-b94795253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                                 className="text-[var(--color-primary-text)] hover:text-[var(--color-accent-blue)] transition-colors transform hover:-translate-y-1 hover:scale-110">
                                 <Linkedin className="w-8 h-8" />
                             </a>
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                            <a href="https://github.com/RayanDoski" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
                                 className="text-[var(--color-primary-text)] hover:text-[var(--color-accent-blue)] transition-colors transform hover:-translate-y-1 hover:scale-110">
                                 <Github className="w-8 h-8" />
                             </a>
