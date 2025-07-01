@@ -25,7 +25,7 @@ function Projects({ isVisible }) {
             description: "An intuitive web application for accessing live cryptocurrency prices and market analytics, facilitating direct investments in digital assets using fiat currency.",
             language: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
             github: "https://github.com/RayanDoski/cryptocoin",
-            live: "https://cryptocoindoski.vercel.app/",
+            live: "https://cryptocoin-two.vercel.app/",
         },
         {
             id: 4,
