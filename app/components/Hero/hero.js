@@ -4,8 +4,8 @@ import { MapPin } from 'lucide-react';
 
 function Hero({ isVisible }) {
     return (
-        <section id='home' className="text-[var(--color-primary-text)] flex items-center py-50 px-4 font-inter bg-[var(--color-primary-bg)]">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 w-full">
+        <section id='home' className="text-[var(--color-primary-text)] flex items-center pt-20 pb-10 px-4 font-inter bg-[var(--color-primary-bg)]">
+            <div className="max-w-7xl mx-auto flex flex-col flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
 
                 <div className={`md:w-1/2 space-y-8 text-center md:text-left transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-[var(--color-primary-text)]">

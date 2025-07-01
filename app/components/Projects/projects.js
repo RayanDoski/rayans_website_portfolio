@@ -35,6 +35,14 @@ function Projects({ isVisible }) {
             github: "https://github.com/RayanDoski/rayans_website_portfolio",
             live: null,
         },
+        {
+            id: 5,
+            name: "Book Application",
+            description: "An intelligent book recommendation application utilizing an LLM API to provide personalized suggestions.",
+            language: ["React", "Next.js", "Tailwind CSS", "LLM API Integration"],
+            github: "https://github.com/RayanDoski/bookapplication",
+            live: "https://bookapplication-ten.vercel.app/",
+        },
     ];
 
     const [filter, setFilter] = useState("All");
