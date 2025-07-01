@@ -7,6 +7,7 @@ import About from '@/app/components/About/about'
 import Projects from '@/app/components/Projects/projects'
 import Divider from '@/app/components/Divider/divider'
 import Contact from '@/app/components/Contact/contact'
+import RecentProjects from './components/RecentProjects/recentProjects';
 
 export default function Home() {
 
@@ -20,6 +21,8 @@ export default function Home() {
     <>
       <Header isVisible={isVisible} />
       <Hero isVisible={isVisible} />
+      <Divider />
+      <RecentProjects />
       <Divider />
       <About isVisible={isVisible} />
       <Divider />

@@ -12,6 +12,7 @@ function Header({ isVisible}) {
     // for the links
     const links = [
         { name: 'Home', href: '#home' },
+        { name: 'Latest', href: '#latest-project' },
         { name: 'About', href: '#about' },
         { name: 'Projects', href: '#projects' },
         { name: 'Contact', href: '#contact' },
