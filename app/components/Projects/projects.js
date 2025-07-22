@@ -17,7 +17,7 @@ function Projects({ isVisible }) {
             description: "An intelligent movie recommendation platform delivering personalized suggestions drawn from individual user preferences and viewing history.",
             language: ["React", "Python", "Html", "CSS", "MySQL", "Flask"],
             github: "https://github.com/RayanDoski/DoskiFlix",
-            live: null,
+            live: "https://doskiflix-frontend.fly.dev/",
         },
         {
             id: 3,
